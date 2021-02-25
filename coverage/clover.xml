@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1614251986864" clover="3.2.0">
+  <project timestamp="1614251986864" name="All files">
+    <metrics statements="27" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="6" elements="38" coveredelements="29" complexity="0" loc="27" ncloc="27" packages="3" files="6" classes="6"/>
+    <package name="apps.api.src.app">
+      <metrics statements="13" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="4"/>
+      <file name="app.controller.ts" path="C:\Users\jreye\Documents\GitHub\nxworkspace\apps\api\src\app\app.controller.ts">
+        <metrics statements="8" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+      </file>
+      <file name="app.service.ts" path="C:\Users\jreye\Documents\GitHub\nxworkspace\apps\api\src\app\app.service.ts">
+        <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="apps.nxsonardemo.src.app">
+      <metrics statements="10" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
+      <file name="app.component.html" path="C:\Users\jreye\Documents\GitHub\nxworkspace\apps\nxsonardemo\src\app\app.component.html">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="app.component.ts" path="C:\Users\jreye\Documents\GitHub\nxworkspace\apps\nxsonardemo\src\app\app.component.ts">
+        <metrics statements="9" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="libs.ui.src.lib.todos">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="todos.component.html" path="C:\Users\jreye\Documents\GitHub\nxworkspace\libs\ui\src\lib\todos\todos.component.html">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="todos.component.ts" path="C:\Users\jreye\Documents\GitHub\nxworkspace\libs\ui\src\lib\todos\todos.component.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

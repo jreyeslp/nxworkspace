@@ -63,6 +63,8 @@ jobs:
 
   deploy:
     parameters:
+      package_path:
+        type: string
       package_name:
         type: string
 
@@ -107,7 +109,7 @@ workflows:
             - api-build
 
   nxsonardemo:
-    when: << pipeline.parameters.sonardemo >>
+    when: << pipeline.parameters.nxsonardemo >>
     jobs:
       - build:
           name: nxsonardemo-build

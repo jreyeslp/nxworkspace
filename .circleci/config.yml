@@ -35,6 +35,9 @@ jobs:
           command: chmod +x .circleci/circle_trigger.sh && .circleci/circle_trigger.sh
 
   build:
+    docker:
+      - image: cimg/base:2020.01
+
     parameters:
       package_path:
         type: string
@@ -60,6 +63,7 @@ jobs:
           root: ~/project
           paths:
             - << parameters.package_path >>/<< parameters.package_name >>
+      - sonarcloud/scan
 
   deploy:
     parameters:
@@ -81,6 +85,15 @@ jobs:
       - deploy:
           name: Deploy
           command: echo "Deploying << parameters.package_path >>/<< parameters.package_name >> ..."
+
+orbs:
+  sonarcloud: sonarsource/sonarcloud@1.0.1
+
+workflows:
+  main:
+    jobs:
+      - build:
+          context: SonarCloud
 
 workflows:
   version: 2

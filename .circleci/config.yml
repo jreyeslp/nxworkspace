@@ -1,5 +1,8 @@
 version: 2.1
 
+orbs:
+  sonarcloud: sonarsource/sonarcloud@1.0.2
+
 parameters:
   # This parameter is used to trigger the main workflow
   trigger:
@@ -36,7 +39,7 @@ jobs:
 
   build:
     docker:
-      - image: cimg/base:2020.01
+      - image: node:latest
 
     parameters:
       package_path:
@@ -86,9 +89,6 @@ jobs:
           name: Deploy
           command: echo "Deploying << parameters.package_path >>/<< parameters.package_name >> ..."
 
-orbs:
-  sonarcloud: sonarsource/sonarcloud@1.0.1
-
 workflows:
   version: 2
 
@@ -102,7 +102,7 @@ workflows:
   main:
     jobs:
       - build:
-        context: SonarCloud
+        context: sonarcloud
 
   # Workflows defined for each package.
 

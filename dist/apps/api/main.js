@@ -115,6 +115,9 @@ let AppController = class AppController {
     addTodo() {
         return this.appService.addTodo();
     }
+    addTodo1() {
+        return this.appService.addTodo1();
+    }
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Get"])('todos'),
@@ -128,6 +131,12 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", []),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:returntype", void 0)
 ], AppController.prototype, "addTodo", null);
+Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Post"])('addTodo1'),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Function),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", []),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:returntype", void 0)
+], AppController.prototype, "addTodo1", null);
 AppController = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Controller"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [typeof (_a = typeof _app_service__WEBPACK_IMPORTED_MODULE_2__["AppService"] !== "undefined" && _app_service__WEBPACK_IMPORTED_MODULE_2__["AppService"]) === "function" ? _a : Object])
@@ -199,6 +208,11 @@ let AppService = class AppService {
             title: `New todo ${Math.floor(Math.random() * 1000)}`,
         });
     }
+    addTodo1() {
+        this.todos.push({
+            title: `New todo ${Math.floor(Math.random() * 1000)}`,
+        });
+    }
 };
 AppService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
@@ -255,7 +269,7 @@ bootstrap();
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\jreye\Documents\GitHub\nxworkspace\apps\api\src\main.ts */"./apps/api/src/main.ts");
+module.exports = __webpack_require__(/*! /Users/jreyes/Documents/GitHub Repos/nxworkspace/apps/api/src/main.ts */"./apps/api/src/main.ts");
 
 
 /***/ }),

@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\jreye\Documents\GitHub\nxworkspace\apps\nxsonardemo\src\main.ts */"hIoh");
+module.exports = __webpack_require__(/*! /Users/jreyes/Documents/GitHub Repos/nxworkspace/apps/nxsonardemo/src/main.ts */"hIoh");
 
 
 /***/ }),
@@ -47,7 +47,7 @@ class AppComponent {
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"])); };
 AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["nxworkspace-root"]], decls: 5, vars: 1, consts: [[3, "todos"], [3, "click"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "h1");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "Todos");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "Hey, it's a Todos list!");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](2, "nxworkspace-todos", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "button", 1);

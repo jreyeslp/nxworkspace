@@ -28,6 +28,7 @@
 		"help": "nx help",
 		"sonar": "npm run jest-test && sonar-scanner",
 		"sonar-test": "jest --coverage && npx nx run-many --target=test --code-coverage --projects=nxsonardemo,api,data,ui",
+		"many-build": "npx nx run-many --target=build --projects=nxsonardemo,api,data,ui",
 		"jest-test": "jest --coverage"
 	},
 	"jest": {

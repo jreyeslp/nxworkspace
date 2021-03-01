@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\jreye\Documents\GitHub\nxworkspace\apps\nxsonardemo\src\polyfills.ts */"Ue5p");
+module.exports = __webpack_require__(/*! /Users/jreyes/Documents/GitHub Repos/nxworkspace/apps/nxsonardemo/src/polyfills.ts */"Ue5p");
 
 
 /***/ }),

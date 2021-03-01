@@ -38,9 +38,6 @@ jobs:
           command: chmod +x .circleci/circle_trigger.sh && .circleci/circle_trigger.sh
 
   build:
-    docker:
-      - image: node:latest
-
     parameters:
       package_path:
         type: string
@@ -99,11 +96,6 @@ workflows:
     jobs:
       - trigger-workflows
 
-  main:
-    jobs:
-      - build:
-        context: sonarcloud
-
   # Workflows defined for each package.
 
   api:
@@ -113,6 +105,7 @@ workflows:
           name: api-build
           package_path: apps
           package_name: api
+          context: sonarcloud
       - deploy:
           name: api-deploy
           package_path: apps
@@ -127,6 +120,7 @@ workflows:
           name: nxsonardemo-build
           package_path: apps
           package_name: nxsonardemo
+          context: sonarcloud
       - deploy:
           name: nxsonardemo-deploy
           package_path: apps
@@ -141,6 +135,7 @@ workflows:
           name: data-build
           package_path: libs
           package_name: data
+          context: sonarcloud
       - deploy:
           name: data-deploy
           package_path: libs
@@ -155,6 +150,7 @@ workflows:
           name: ui-build
           package_path: libs
           package_name: ui
+          context: sonarcloud
       - deploy:
           name: ui-deploy
           package_path: libs

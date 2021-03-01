@@ -105,7 +105,7 @@ workflows:
           name: api-build
           package_path: apps
           package_name: api
-          context: sonarcloud
+          context: SonarCloud
       - deploy:
           name: api-deploy
           package_path: apps
@@ -120,7 +120,7 @@ workflows:
           name: nxsonardemo-build
           package_path: apps
           package_name: nxsonardemo
-          context: sonarcloud
+          context: SonarCloud
       - deploy:
           name: nxsonardemo-deploy
           package_path: apps
@@ -135,7 +135,7 @@ workflows:
           name: data-build
           package_path: libs
           package_name: data
-          context: sonarcloud
+          context: SonarCloud
       - deploy:
           name: data-deploy
           package_path: libs
@@ -150,7 +150,7 @@ workflows:
           name: ui-build
           package_path: libs
           package_name: ui
-          context: sonarcloud
+          context: SonarCloud
       - deploy:
           name: ui-deploy
           package_path: libs

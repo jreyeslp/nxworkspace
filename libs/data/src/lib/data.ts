@@ -1,3 +1,8 @@
 export interface Todo {
-  title: string;
+	title: string;
+}
+
+export interface TodoTest {
+	title: string;
+	id: number;
 }

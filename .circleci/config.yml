@@ -54,7 +54,6 @@ jobs:
       - run:
           name: Content
           command: |
-            cat README.md
             echo "<< parameters.package_path >>/<< parameters.package_name >> built." > build.txt
       - run:
           name: Build

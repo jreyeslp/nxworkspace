@@ -114,10 +114,6 @@ echo "Changes detected in ${COUNT} libs/ project(s)."
 APPS_PACKAGES=$(ls ${APPS_ROOT} -l | grep ^d | awk '{print $9}')
 echo "Searching for /apps changes since commit [${LAST_COMPLETED_BUILD_SHA:0:7}] ..."
 
-## The CircleCI API parameters object
-PARAMETERS='"trigger":false'
-COUNT=0
-
 # Get the list of workflows in current branch for which the CI is currently in failed state
 FAILED_WORKFLOWS=$(cat circle.json \
   | jq -r "map(select(.branch == \"${CIRCLE_BRANCH}\")) \

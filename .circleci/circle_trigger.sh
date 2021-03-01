@@ -56,7 +56,7 @@ fi
 ## 2. Changed libs
 ############################################
 LIBS_PACKAGES=$(ls ${LIBS_ROOT} -l | grep ^d | awk '{print $9}')
-echo "Searching for changes since commit [${LAST_COMPLETED_BUILD_SHA:0:7}] ..."
+echo "Searching for /libs changes since commit [${LAST_COMPLETED_BUILD_SHA:0:7}] ..."
 
 ## The CircleCI API parameters object
 PARAMETERS='"trigger":false'
@@ -112,7 +112,7 @@ echo "Changes detected in ${COUNT} libs/ project(s)."
 ## 3. Changed apps
 ############################################
 APPS_PACKAGES=$(ls ${APPS_ROOT} -l | grep ^d | awk '{print $9}')
-echo "Searching for changes since commit [${LAST_COMPLETED_BUILD_SHA:0:7}] ..."
+echo "Searching for /apps changes since commit [${LAST_COMPLETED_BUILD_SHA:0:7}] ..."
 
 ## The CircleCI API parameters object
 PARAMETERS='"trigger":false'

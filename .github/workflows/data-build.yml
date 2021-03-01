@@ -3,10 +3,12 @@ name: Data Build
 on:
   push:
     branches: [main]
+    paths:
+      - 'libs/data/**'
+
   pull_request:
     branches: [main]
-  paths:
-    - 'libs/data/**'
+
   workflow_dispatch:
 
 jobs:

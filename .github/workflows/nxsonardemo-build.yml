@@ -3,10 +3,12 @@ name: NxSonarDemo Build
 on:
   push:
     branches: [main]
+    paths:
+      - 'apps/nxsonardemo/**'
+
   pull_request:
     branches: [main]
-  paths:
-    - 'apps/nxsonardemo/**'
+
   workflow_dispatch:
 
 jobs:

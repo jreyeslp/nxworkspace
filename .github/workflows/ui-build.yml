@@ -3,10 +3,12 @@ name: UI Build
 on:
   push:
     branches: [main]
+    paths:
+      - 'libs/ui/**'
+
   pull_request:
     branches: [main]
-  paths:
-    - 'libs/ui/**'
+
   workflow_dispatch:
 
 jobs:

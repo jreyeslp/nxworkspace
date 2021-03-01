@@ -90,12 +90,6 @@ orbs:
   sonarcloud: sonarsource/sonarcloud@1.0.1
 
 workflows:
-  main:
-    jobs:
-      - build:
-          context: SonarCloud
-
-workflows:
   version: 2
 
   # The main workflow responsible for triggering all other workflows
@@ -104,6 +98,11 @@ workflows:
     when: << pipeline.parameters.trigger >>
     jobs:
       - trigger-workflows
+
+  main:
+    jobs:
+      - build:
+        context: SonarCloud
 
   # Workflows defined for each package.
 
